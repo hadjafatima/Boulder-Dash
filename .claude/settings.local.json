@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"from reportlab.lib.pagesizes import A4; print\\('reportlab ok'\\)\")",
+      "Bash(pip install *)",
+      "Bash(python3 -c \"from reportlab.lib.pagesizes import A4; print\\('ok'\\)\")",
+      "Bash(pip3 install *)",
+      "Bash(python3 -m venv /tmp/pdfenv)",
+      "Bash(/tmp/pdfenv/bin/pip install *)",
+      "Bash(/tmp/pdfenv/bin/python3 /tmp/gen_speech.py)",
+      "Bash(/tmp/pdfenv/bin/python3 /tmp/gen_speech2.py)"
+    ]
+  }
+}

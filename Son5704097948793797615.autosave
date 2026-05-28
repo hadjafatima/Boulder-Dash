@@ -1,0 +1,53 @@
+import javax.sound.sampled.*;
+
+class Son {
+  boolean sonActif = true;
+
+  Son(PApplet parent) {}
+
+  void collecterDiamant() { jouer(1100, 80,  "sin"); }
+  void rocherTombe()       { jouer(80,   200, "carre"); }
+  void joueurMort()        { jouer(140,  500, "carre"); }
+  void sortieOuverte()     { jouer(660,  250, "sin"); }
+  void victoire()          { jouer(880,  500, "sin"); }
+  void menuSelect()        { jouer(440,  60,  "sin"); }
+
+  void basculer() { sonActif = !sonActif; }
+
+  void jouer(final float freq, final int dureeMs, final String forme) {
+    if (!sonActif) return;
+    Thread t = new Thread(new Runnable() {
+      public void run() {
+        try {
+          int sampleRate = 44100;
+          int nbSamples  = sampleRate * dureeMs / 1000;
+          byte[] buf     = new byte[nbSamples];
+
+          for (int i = 0; i < nbSamples; i++) {
+            float t   = (float) i / sampleRate;
+            float env = 1.0 - (float) i / nbSamples; // fade out linéaire
+            float val;
+            if (forme.equals("carre")) {
+              val = (sin(TWO_PI * freq * t) >= 0) ? 1.0 : -1.0;
+            } else {
+              val = sin(TWO_PI * freq * t);
+            }
+            buf[i] = (byte)(val * env * 80); // amplitude 80/127
+          }
+
+          AudioFormat format = new AudioFormat(sampleRate, 8, 1, true, false);
+          DataLine.Info info = new DataLine.Info(SourceDataLine.class, format);
+          SourceDataLine ligne = (SourceDataLine) AudioSystem.getLine(info);
+          ligne.open(format);
+          ligne.start();
+          ligne.write(buf, 0, buf.length);
+          ligne.drain();
+          ligne.close();
+        }
+        catch (Exception e) {}
+      }
+    });
+    t.setDaemon(true);
+    t.start();
+  }
+}

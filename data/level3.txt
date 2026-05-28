@@ -1,0 +1,16 @@
+NORMAL:10
+WWWWWWWWWWWWWWWWWWWW
+WP.......O..*...*Q.W
+W.....O............W
+WW..WWWWW..WWWWWW..W
+W...X...*...*......W
+W.O..O.O.O.O.......W
+WW..WMWWWWWWWWW....W
+W..................W
+W.O..O..O..O..O....W
+W*...*...*...*...*.W
+WWW..WWWWWWWWWWW...W
+W....X.............W
+W..O..O..O..O..O...W
+W*.....*....*...E..W
+WWWWWWWWWWWWWWWWWWWW

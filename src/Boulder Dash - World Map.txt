@@ -1,0 +1,56 @@
+#am4
+;-- HEADER AUTOMATICALLY GENERATED --
+$ED $80 $6D $2B 
+$ED $80 $7D $00 
+$F0
+;-- END OF HEADER -------------------
+
+;Boulder Dash - World Map
+;Music Composer: Victor Musical Industries
+;Converted by: Nipcen (SMWC)
+;
+;Original Music and Sound
+;Composer by: Koji Kondo
+;
+;Programmed by: 3ml Editor "Elle"
+;Running Time: 14 seconds
+;Sequenced By: Matthias_doorn@hotmail.com
+;
+;Description:
+;Boulder Dash - World Map
+;was composed by Victor Musical
+;Industries.
+
+t52
+
+#0
+@5o4g+4.<b8>e8.g+8.a8g+4.<b8>e8.g+8.a8
+b4.f+4d+8f+8b8a4.g+4.f+4e4.<b16>c+16
+e8.g+8.a8g+4.f+16g+16f+2a8.g+8.e8a8.
+g+8.e8a8.g+8.e8e4f+4;
+
+#1
+@13o2g+8.b8.>e8.<b8.>e8<b8a8.>e8.a8.e8.
+a16g+16f+16e16d+8.f+8.b8.>d+8.c+8<b8>
+c+8.<g+8.c+8>c+16<g+16c+16g+16b16f+16
+<b16>b16<a8.>e8.a8.<a8.>e8a8<b8.>f+8.
+b8.<b8.>b16a16g+16f+16c+8.g+8.>c+16<
+g+16<b8.>g+8.b16f+16<a8.>e8.a16f+16
+d+16f+16a16b8a16g+16f+16;
+
+#2
+
+@5o4e4.<g+8b8.>e8.f+8e4.<g+8b8.>e8.
+f+8f+4.d+4<b8>d+8f+8f+4.e4.d+4c+4.<
+g+16a16>c+8.e8.f+8d+4.d+16e16d+2e8.
+e8.c+8e8.e8.c+8e8.e8.c+8c+4d+4;
+
+#3
+o2@10c8.@10c16@29e8r4@10c8@29e8r8
+@10c8.@10c16@29e8r4@10c8@29e8@29d8
+@10c8.@10c16@29e8r4@10c8@29e8r8
+@10c8.@10c16@29e8r4@10c8@29e8@29e16@29e16
+@10c8.@10c16@29e8r4@10c8@29e8r8
+@10c8.@10c16@29e8r4@10c8@29e8@29d8
+@10c8.@10c16@29e8@10c8@10c8.@10c16@29e8@10c8
+@10c8.@10c16@29e16@29e16@10c8@29e8@10c8@29e8@29e16@29e16
